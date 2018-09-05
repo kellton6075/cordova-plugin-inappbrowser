@@ -112,15 +112,4 @@
         </js-module>
         <asset src="www/inappbrowser.css" target="css/inappbrowser.css" />
     </platform>
-
-    <!-- browser -->
-    <platform name="browser">
-        <js-module src="www/inappbrowser.js" name="inappbrowser">
-            <clobbers target="cordova.InAppBrowser.open" />
-            <clobbers target="window.open" />
-        </js-module>
-        <js-module src="src/browser/InAppBrowserProxy.js" name="InAppBrowserProxy">
-            <runs />
-        </js-module>
-    </platform>
 </plugin>
